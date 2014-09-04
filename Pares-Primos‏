@@ -1,0 +1,76 @@
+var num = [2,4,6,7,9,0,.1];
+
+
+//VARIABLES
+var contador=2; //Contador
+var x; //guardar el número digitado
+x = prompt("¿Ingrese un número?");
+for(var i = 0; i < contador.length; i++)
+	{
+		
+//NÚMERO PRIMOS
+		   
+		 if (x%2==0) 
+		 {
+				contador++;
+
+		 };
+
+		 if (x%3==0)
+		 {
+				contador++;
+
+		 };
+
+		 if (x%5==0) 
+		 {
+				contador++;
+
+		 };
+
+
+		 if (x==2) 
+		 {
+				contador--;
+
+		 };
+
+		 if (x==3) 
+		 {
+				contador--;
+
+		 };   
+
+		if (x==5) 
+		{
+				contador--;
+
+		 };
+
+		document.write("El número: "+x); 
+
+		if (contador<=2) 
+		{
+
+			document.write("!SI! es primo."); // el número  es primo.
+		};
+
+		if (contador>=3) 
+		{
+
+			document.write("!NO! es primo.") //el número no es primo.
+		  
+//NÚMERO PAR INPAR
+		if (NumeroUser%2==0) 
+		{
+		            alert(NumeroUser+"  Es un número par");
+
+		};
+
+		
+		if (NumeroUser%2==1) 
+		{
+			alert(NumeroUser+"  Es un número impar");
+
+		};
+}
